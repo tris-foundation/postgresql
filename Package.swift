@@ -4,12 +4,8 @@ import PackageDescription
 let package = Package(
     name: "PostgreSQL",
     dependencies: [
-        .package(
-            url: "https://github.com/tris-code/aio.git",
-            .branch("master")),
-        .package(
-            url: "https://github.com/tris-code/test.git",
-            .branch("master"))
+        .package(path: "../AIO"),
+        .package(path: "../Test")
     ],
     targets: [
         .target(
