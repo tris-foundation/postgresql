@@ -4,8 +4,8 @@ import PackageDescription
 let package = Package(
     name: "PostgreSQL",
     dependencies: [
-        .package(path: "../AIO"),
-        .package(path: "../Test")
+        .package(path: "../aio"),
+        .package(path: "../test")
     ],
     targets: [
         .target(
